@@ -1,0 +1,62 @@
+
+// Header
+// -------------------------
+.header {
+  display: flex;
+  align-items: center;
+  background: lighten($theme-bg, 3%);
+  min-height: 60px;
+  height: 60px;
+  padding: 0 1.5rem;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.025), 
+              0 1px 3px 0 rgba(0,0,0,.12), 
+              0 1px 2px rgba(0,0,0,.15);
+  h2 {
+    margin: 0;
+  }
+  img {
+    margin-right: 0.75rem;
+  }
+}
+
+// Main Layout
+// -----------------------
+.main {
+  display: flex;
+  overflow: hidden;
+  @media (max-width: $screen-sm) {
+    display: block;
+    overflow-y: auto;
+    .sidebar {
+      max-width: 100%;
+    }
+    .content {
+      display: block;
+    }
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem 1rem 3rem;
+  overflow: hidden;
+  overflow-y: auto;
+  h3 {
+    margin-top: 2rem;
+  }
+}
+.sidebar {
+  width: 100%;
+  max-width: 280px;
+  padding: 1.5rem 0 3rem;
+  overflow: hidden;
+  overflow-y: auto;
+  .list-group {
+    a {
+      border-radius: 0 40px 40px 0;
+    }
+  }
+}
+

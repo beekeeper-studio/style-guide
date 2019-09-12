@@ -1,0 +1,56 @@
+# Site settings
+# -------------
+
+title: Beekeeper
+description: 
+
+# Page settings
+url: ""
+baseurl: ""
+date_format: "%b %-d, %Y"
+google_analytics: 'UA-XXXXXXXX-X'
+
+# SEO settings
+author: Gregory Garden
+
+# Build settings
+# livereload: true
+
+# Default markdown parser
+markdown: kramdown
+kramdown:
+  input: GFM
+  sytax_highlighter: rouge
+
+# keep_files:
+#   - assets/fonts
+
+collections:
+  pages:
+    output: true
+    permalink: :path
+
+assets:
+  sources:
+      - _assets
+
+# List our Jekyll plugins below
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-redirect-from
+
+# Exclude from processing (not moved to `_site/`)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - CNAME
+  - LICENSE
+  - README.md
+  - webpack.config.js
+  - "*.lock"
+  - "*.log"

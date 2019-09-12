@@ -1,0 +1,18 @@
+---
+layout: base 
+---
+
+<header class="header">
+  <a href="/" class="flex flex-middle">
+    {% asset img/beekeeper-logo.svg height=38 %}
+    <h2>Style Guide</h2>
+  </a>
+</header>
+<div class="main">
+  {% include sidebar.html %}
+  <article class="content {{ page.class }}">
+    <div class="small-wrap">
+      {{ content }}
+    </div>
+  </article>
+</div>

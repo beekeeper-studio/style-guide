@@ -1,0 +1,7 @@
+<aside class="sidebar">
+  <nav class="list-group flex-col">
+    {% for link in site.data.navigation %}
+      <a href="{{ link.url }}" {% if link.url == page.url %}class="active"{% endif %}>{{ link.title }}</a>
+    {% endfor%}
+  </nav>
+</aside>

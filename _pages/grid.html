@@ -1,0 +1,154 @@
+---
+layout: default
+class: grid
+---
+  
+<h1>Grid</h1>
+<p>
+  Flex grid based on 12 columns<br>
+  <em>**Uncommon sizes ommitted (m1, m2, m5, m7, m10, m11)</em>
+</p>
+<div class="card-flat padding">
+  <table>
+    <thead>
+      <th>Size</th>
+      <th>Breakpoint</th>
+      <th>Classes</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Extra Small:</td>      
+        <td>width < <b>600px</b></td>
+        <td>x3, x4, x6, x8, x9</td>
+      </tr>
+      <tr>
+        <td>Small: </td>      
+        <td>width < <b>992px</b></td>
+        <td>s3, s4, s6, s8, s9</td>
+      </tr>
+      <tr>
+        <td>Medium:</td>       
+        <td>width < <b>1200px</b></td>
+        <td>m3, m4, m6, m8, m9</td>
+      </tr>
+      <tr>
+        <td>Large:</td>
+        <td>width < <b>1600px</b></td>
+        <td>l3, l4, l6, l8, l9</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="grid-example">
+  <div class="row">
+    <span class="col m9">m9</span>
+    <span class="col m3">m3</span>
+  </div>
+  <div class="row">
+    <span class="col m8">m8</span>
+    <span class="col m4">m4</span>
+  </div>
+  <div class="row">
+    <span class="col m6">m6</span>
+    <span class="col m6">m6</span>
+  </div>
+  <div class="row">
+    <span class="col m4">m4</span>
+    <span class="col m4">m4</span>
+    <span class="col m4">m4</span>
+  </div>
+  <div class="row">
+    <span class="col m3">m3</span>
+    <span class="col m3">m3</span>
+    <span class="col m3">m3</span>
+    <span class="col m3">m3</span>
+  </div>
+</div>
+
+{% highlight html %}
+<div class="row">
+  <span class="col m9"></span>
+  <span class="col m3"></span>
+</div>
+<div class="row">
+  <span class="col m8"></span>
+  <span class="col m4"></span>
+</div>
+<div class="row">
+  <span class="col m6"></span>
+  <span class="col m6"></span>
+</div>
+<div class="row">
+  <span class="col m4"></span>
+  <span class="col m4"></span>
+  <span class="col m4"></span>
+</div>
+<div class="row">
+  <span class="col m3"></span>
+  <span class="col m3"></span>
+  <span class="col m3"></span>
+  <span class="col m3"></span>
+</div>
+{% endhighlight %}
+
+<h3>Gutters</h3>
+<p>Note: Content must be inside row>col to work properly</p>
+<div class="grid-example">
+  <div class="row gutter">
+    <div class="col m6"><span>m6</span></div>
+    <div class="col m6"><span>m6</span></div>
+  </div>
+  <div class="row gutter">
+    <div class="col m4"><span>m4</span></div>
+    <div class="col m4"><span>m4</span></div>
+    <div class="col m4"><span>m4</span></div>
+  </div>
+</div>
+
+{% highlight html %}
+<div class="row gutter">
+  <div class="col m6"><span>m6</span></div>
+  <div class="col m6"><span>m6</span></div>
+</div>
+<div class="row gutter">
+  <div class="col m4"><span>m4</span></div>
+  <div class="col m4"><span>m4</span></div>
+  <div class="col m4"><span>m4</span></div>
+</div>
+{% endhighlight %}
+
+<h3>Mix and Match</h3>
+<div class="grid-example">
+  <div class="row">
+    <span class="col m8">m8</span>
+    <span class="col m4 s6">m4 s6</span>
+  </div>
+  <div class="row">
+    <span class="col m4 s6">m4 s6</span>
+    <span class="col m4 s6">m4 s6</span>
+    <span class="col m4 s6">m4 s6</span>
+  </div>
+  <div class="row">
+    <span class="col x6">x6</span>
+    <span class="col x6">x6</span>
+  </div>
+</div>
+
+{% highlight html %}
+<div class="row">
+  <span class="col m8"></span>
+  <span class="col m4 s6"></span>
+</div>
+<div class="row">
+  <span class="col m4 s6"></span>
+  <span class="col m4 s6"></span>
+  <span class="col m4 s6"></span>
+</div>
+<div class="row">
+  <span class="col x6"></span>
+  <span class="col x6"></span>
+</div>
+{% endhighlight %}
+
+

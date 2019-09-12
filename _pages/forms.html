@@ -1,0 +1,86 @@
+---
+layout: default
+class: forms
+---
+
+<h1>Forms</h1>
+
+<h3>Alerts</h3>
+<div class="alert alert-success">
+  <i class="material-icons">check_circle</i>
+  <div>Alert - Success</div>
+</div>
+<div class="alert alert-info">
+  <i class="material-icons">info</i>
+  <div>Alert - Info</div>
+</div>
+<div class="alert alert-danger">
+  <i class="material-icons">warning</i>
+  <div>Alert - Warning</div>
+</div>
+
+{% highlight html %}
+<div class="alert alert-success">
+  <i class="material-icons">check_circle</i>
+  <div>Alert - Success</div>
+</div>
+<div class="alert alert-info">
+  <i class="material-icons">info</i>
+  <div>Alert - Info</div>
+</div>
+<div class="alert alert-danger">
+  <i class="material-icons">warning</i>
+  <div>Alert - Warning</div>
+</div>
+{% endhighlight %}
+
+<h3>Inputs</h3>
+<div class="card-flat padding">
+  <div class="form-group">
+    <label>Label</label>
+    <input placeholder="Enter Text">
+    <span class="hint text-danger">Error Text</span>
+  </div>
+</div>
+
+{% highlight html %}
+<div class="form-group">
+  <label>Label</label>
+  <input placeholder="Enter Text">
+  <span class="hint">Hint</span>
+</div>
+<div class="form-group">
+  <label>Label</label>
+  <input placeholder="Enter Text">
+  <span class="hint text-danger">Error Text</span>
+</div>
+{% endhighlight %}
+
+<h3>Input Group</h3>
+<div class="card-flat padding">
+  <div class="row gutter">
+    <div class="col m6 form-group">
+      <input placeholder="Input 1">
+    </div>
+    <div class="col m6 form-group">
+      <input placeholder="Input 2">
+    </div>
+  </div>
+  <div class="form-group">
+    <input placeholder="Input 3">
+  </div>
+</div>
+
+{% highlight html %}
+<div class="row gutter">
+  <div class="col m6 form-group">
+    <input placeholder="Input 1">
+  </div>
+  <div class="col m6 form-group">
+    <input placeholder="Input 2">
+  </div>
+</div>
+<div class="form-group">
+  <input placeholder="Input 3">
+</div>
+{% endhighlight %}

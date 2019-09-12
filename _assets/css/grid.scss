@@ -1,0 +1,34 @@
+.grid-example {
+  .row {
+    overflow: hidden;
+    span {
+      display: flex;
+      flex-grow: 1;
+      background: $brand-info;
+      color: white;
+      box-shadow: -1px 0 rgba($theme-base, 0.2);
+      padding: 0.5rem;
+      justify-content: center;
+      margin: 2px 0;
+    }
+    &.gutter {
+      span {
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+  }
+}
+.grid {
+  .card-flat {
+    margin-bottom: 1rem;
+  }
+  table {
+    width: 100%;
+    th {
+      text-align: left;
+      padding: 0.5rem 0;
+      color: $theme-base;
+    }
+  }
+}
